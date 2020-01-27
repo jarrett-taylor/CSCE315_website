@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Jarrett Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -14,7 +14,6 @@ body, html {
   line-height: 1.8;
 }
 
-/* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
   background-position: center;
@@ -22,28 +21,17 @@ body, html {
   background-size: cover;
 }
 
-/* First image (Logo. Full height) */
+
 .bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
+  background-image: url('Pictures/portfolio.jpg');
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
+
 @media only screen and (max-device-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: scroll;
@@ -53,131 +41,82 @@ body, html {
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
     <a href="index.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="about.html" class="w3-bar-item w3-button">About Me</a>
-    <a href="pro.html" class="w3-bar-item w3-button">Professional Image</a>
-    <a href="port.html" class="w3-bar-item w3-button">Portfolio</a>
-    <a href="serv.html" class="w3-bar-item w3-button">Service</a>
+    <a href="about.html" class="w3-bar-item w3-button">ABOUT ME</a>
+    <a href="pro.html" class="w3-bar-item w3-button">PROFESSIONAL IMAGE</a>
+    <a href="port.html" class="w3-bar-item w3-button">PORTFOLIO</a>
+    <a href="serv.html" class="w3-bar-item w3-button">SERVICE</a>
 
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
+
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Jarrett Taylor</span>
   </div>
 </div>
 
-<!-- Container (About Section) -->
+
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">Statement</h3>
-  <p class="w3-center"><em>CSCE 445</em></p>
-  <p>Howdy, I am Jarrett and I am in this class to be able to further my coding knowledge, 
-    software development tactics and teamwork skills.  This will be accomplished via 
-    the team project that will take place during the semester.  I hope this class, 
-    Computer and New Media can really prove to be beneficial to my future career
-    in the computer science world.</p>
+  <h3 class="w3-center">PORTFOLIO</h3>
+  <p class="w3-center"><em>My Projects</em></p>
+  <p>To begin my coding career, I started with my high school project I described in my professional image page. The team was split into two main groups, hardware and software.  Being a member of the software team, I worked with developing the code that interacts with the user.  This meant being able to create successful modules that can be accessed by both the teacher and students.  I worked on both user-interface and the data collection for the program.
+  <a href="https://lemelson.mit.edu/teams/644">InvenTeam Link</a>
+  </p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Jarrett Taylor</b></p><br>
-      <img src="professional_photo.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      <img src="Pictures/ercot.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
     </div>
 
-    <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Howdy, this picture to the side of the text was taken during a presentation I gave at my first internship.
-          The internship was in Taylor,TX, which is near Austin and it was for the Electrical Reliabity Council Of Texas or ERCOT
-          for short.  My project was to develop a single model-driven webpage that display all of the necessary generation statistics
-          for each county in Texas based on user choice.  This program was valuable as the previous displays were one per county and
-          each display needed to be manually updated as changes where made to it generation.  This lead to most displays being quickly
-          out of date as changes needed to be made, while my program developed the webpage based on the most up-to-date information 
-          held in the current model.
+      <p>
+        The next notible project was the website I designed at ERCOT.  The goal of this program was to replace hundred of mainly updated pages into a mode-driven web-based application that would dynimally write the webpage's display based upon the information held in the model.  The completion of this project saved hundred of man hours while also enhancing accuracy of information being presented with the change of manual updates to a model-driven web application.  As the website is for internal use only, I am not able to link the website but here is the presentation I gave to the company following the advancement of my program.
+        <a href="Pictures/ercot_presentation.pdf">Presentation Link</a>
       </p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Time Spent on Media Intake</p>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Video/Audio</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:60%">60%</div>
+  <div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p class="w3-center">
+        To learn more about me, check out my LinkedIn profile.
+        <a href="https://www.linkedin.com/in/jarrett-taylor-724935191">LinkedIn</a>
+      </p>
+    </div>
+    <br>
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p class="w3-center">
+        If you are interested on the project I will complete in the future, here is my GitHub
+        <a href="https://github.com/jarrett-taylor?tab=repositories">GitHub</a>
+      </p>
+    </div>
   </div>
-  <ul>
-      <li>Television</li>
-      <ul>
-          <li>Netflix</li>
-          <li>Shows</li>
-      </ul>
-      <li>Streaming</li>
-      <ul>
-          <li>Youtube</li>
-          <li>Twitch</li>
-          <li>Podcasts</li>
-          <li>Appe Music</li>
-      </ul>
-  </ul>
-
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Applications/Games</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:25%">25%</div>
+  <div>
+    <p class="w3-center">
+      If you would like to see another webpage I created for CSCE 445, the link is attached below!
+    </p>
+    <center>
+      <a href="http://people.tamu.edu/~jarrett/CSCE445/">CSCE 445 Website</a>
+    </center>
   </div>
-  <ul>
-      <li>Mobile</li>
-        <li>Snapchat</li>
-        <li>Twitter</li>
-        <li>Messaging</li>
-        <li>LinkedIn</li>
-      <li>PS4</li>
-      <ul>
-          <li>Rocket League</li>
-          <li>Call Of Duty</li>
-          <li>GTA V</li>
-      </ul>
-
-  </ul>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Information</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:15%">15%</div>
-  </div>
-  <ul>
-      <li>News</li>
-      <li>Reading</li>
-      <ul>
-          <li>Textbooks</li>
-          <li>Journals</li>
-          <li>Articles</li>
-      </ul>
-      <li>Websites</li>
-      <ul>
-          <li>Blackboard</li>
-          <li>Email</li>
-          <li>Stack Overflow</li>
-      </ul>
-  </ul>
 </div>
 
-<!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <p class="h6">Contact: Jarrett Taylor</p>
+  <p class="h6">jarrett@tamu.edu</p>
+  <p class="h6">972-821-3748</p>
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
   </div>
 </footer>
  
 <script>
-// Modal Image Gallery
+
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
@@ -185,7 +124,7 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 
-// Change style of navbar on scroll
+
 window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
@@ -196,7 +135,7 @@ function myFunction() {
     }
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
+
 function toggleFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("w3-show") == -1) {
