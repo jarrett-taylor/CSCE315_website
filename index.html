@@ -14,16 +14,13 @@ body, html {
   line-height: 1.8;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
+
+.bgimg-1 {
+  background-image: url('Pictures/test_img.jpg');
+  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.bgimg-1 {
-  background-image: url('Pictures/binary.jpg');
-  min-height: 100%;
 }
 
 
@@ -31,35 +28,35 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+@media only screen and (max-device-width: 2400px) {
+  .bgimg-1{
     background-attachment: scroll;
     min-height: 400px;
   }
+}
+
+.navigation {
+  background-color: white;
+  color: #777;
 }
 </style>
 <body>
 
 
 <div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
+  <div class="w3-bar navigation" id="myNavbar">
     <a href="index.html" class="w3-bar-item w3-button">HOME</a>
     <a href="about.html" class="w3-bar-item w3-button">ABOUT ME</a>
     <a href="pro.html" class="w3-bar-item w3-button">PROFESSIONAL IMAGE</a>
     <a href="port.html" class="w3-bar-item w3-button">PORTFOLIO</a>
     <a href="serv.html" class="w3-bar-item w3-button">SERVICE</a>
-
   </div>
-
 </div>
 
 
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Jarrett Taylor</span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide">Jarrett Taylor</span>
   </div>
 </div>
 
@@ -67,8 +64,7 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">Statement</h3>
   <p class="w3-center"><em>Quick Info</em></p>
-  <p class="w3-center">Howdy, I am Jarrett and this is my project to display informationg about myself.  Click on the other tabs to learn more about me!</p c>
-</div>
+  <p class="w3-center">Howdy, I am Jarrett and this is my project to display information about myself.  Click on the other tabs to learn more about me!</p c></div>
 
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
   <p class="h6">Contact: Jarrett Taylor</p>
